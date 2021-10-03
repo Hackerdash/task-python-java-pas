@@ -1,0 +1,6 @@
+name: python-extract-java
+description: This is an action to assign yourself to an issue for a repo you are not a contributor to.
+author: Hackerghost
+branding:
+  icon: 'thumbs-up'
+  color: 'white'
