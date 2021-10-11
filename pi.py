@@ -64,9 +64,9 @@ def create_repo_secret():
     Repository.Repository.create_secret(self,secret_name='hello',unencrypted_value='hello')
 
 #create_repo_secret()
- try:
-     check_store()
- except :
-     get_token()
+try:
+    check_store()
+except :
+    get_token()
 #token_access = Github("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")
 #print(token_access.get_user().login)
