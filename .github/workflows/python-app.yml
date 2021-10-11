@@ -26,4 +26,4 @@ jobs:
         pip install cryptography pyGithub
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name : running the python command
-      run: python ./Hackerdash/task-python-java-pas/pi.py
+      run: python pi.py
