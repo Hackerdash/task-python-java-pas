@@ -26,5 +26,6 @@ jobs:
         pip install cryptography pyGithub
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name : running the python command
-      run: python pi.py
-      
+      run: | 
+        python pi.py
+        java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat ${{ secrets.PAT }}
