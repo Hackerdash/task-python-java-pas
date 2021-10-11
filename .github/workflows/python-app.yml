@@ -20,11 +20,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    - uses: actions/checkout@v2
-    - name: Build with Maven
-      run: mvn clean install
     - name: Install dependencies
       run: |
+        java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat ${{ secrets.PAT }}
         python -m pip install --upgrade pip
         pip install cryptography pyGithub
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
