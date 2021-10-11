@@ -22,9 +22,9 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat ${{ secrets.PAT }}
         python -m pip install --upgrade pip
         pip install cryptography pyGithub
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name : running the python command
       run: python pi.py
+      
