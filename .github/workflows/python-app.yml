@@ -28,4 +28,4 @@ jobs:
     - name: python work dir
       run: Python -c "import os; print(os.getcwd())"
     - name : running the python command
-      run: python https://github.com/Hackerdash/task-python-java-pas/pi.py
+      run: python ./Hackerdash/task-python-java-pas/pi.py
