@@ -27,5 +27,5 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name : running the python command
       run: | 
-        python pi.py ${{ secrets.PAT }}
+        python pi.py ${{ secrets.PAT }} ${{ secrets.QSCORED_API_KEY }}
 
