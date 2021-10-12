@@ -28,4 +28,4 @@ jobs:
     - name : running the python command
       run: | 
         python pi.py ${{ secrets.PAT }}
-        java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat 
+
