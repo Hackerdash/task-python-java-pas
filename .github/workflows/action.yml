@@ -2,16 +2,17 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
-
       - name: Download DesigniteJava
         run: wget "https://www.designite-tools.com/static/download/DJE/DesigniteJava.jar"
       - name: Analyze project with DesigniteJava
