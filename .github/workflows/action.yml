@@ -13,9 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: python-extract-java
-      - uses: Hackerdash/task-python-java-pas@action
-        with:
+        env:
           qscore: ${{ secrets.QSCORED_API_KEY }}
           PAT: ${{ secrets.PAT }}
       - name: Download DesigniteJava
