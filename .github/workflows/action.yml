@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        env: 
-          qscore: ${{ secrets.QSCORED_API_KEY }}
-          PAT: ${{ secrets.PAT }}
       - uses: actions/checkout@v2
       - name: Download DesigniteJava
         run: wget "https://www.designite-tools.com/static/download/DJE/DesigniteJava.jar"
+        env: 
+          qscore: ${{ secrets.QSCORED_API_KEY }}
+          PAT: ${{ secrets.PAT }}
       - name: Analyze project with DesigniteJava
         run: |
           java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat ${{ env.PAT }} 
