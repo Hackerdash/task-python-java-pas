@@ -8,4 +8,4 @@ inputs:
   repo-token:
     description: "The GITHUB_TOKEN repo secret"
 runs:
-   uses: "./.github/workflows/action.yml"
+   uses: ./.github/workflows/action.yml
