@@ -8,4 +8,9 @@ inputs:
   repo-token:
     description: "The GITHUB_TOKEN repo secret"
 
-uses: ./.github/workflows/action.yml
+runs:
+  using: "composite"
+  steps:
+    run:  |
+      cd  ./.github/workflows/action.yml
+  
