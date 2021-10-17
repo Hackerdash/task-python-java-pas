@@ -12,5 +12,6 @@ runs:
   using: "composite"
   steps:
     run:  |
+      ls
       cd  ./.github/workflows/action.yml
   
