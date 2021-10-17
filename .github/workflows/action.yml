@@ -8,13 +8,15 @@ on:
 
 jobs:
   build:
-    env: 
-        qscore: ${{ secrets.QSCORED_API_KEY }}
-        PAT: ${{ secrets.PAT }}
+
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/python-extract-java-pas@v1
+        env: 
+          qscore: ${{ secrets.QSCORED_API_KEY }}
+          PAT: ${{ secrets.PAT }}
       - name: Download DesigniteJava
         run: wget "https://www.designite-tools.com/static/download/DJE/DesigniteJava.jar"
 
