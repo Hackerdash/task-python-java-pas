@@ -6,10 +6,10 @@ branding:
   color: 'white'
 inputs:
   PAT:
-    description: "The GITHUB_TOKEN repo secret"
+    description: 'The GITHUB_TOKEN repo secret'
     default: ${{ secrets.PAT }}
   qscore:
-    description: "provide the QScored api"
+    description: 'provide the QScored api'
     default: ${{ secrets.QSCORED_API_KEY }}
 
 runs:
