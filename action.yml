@@ -7,10 +7,10 @@ branding:
 inputs:
   PAT:
     description: 'The GITHUB_TOKEN repo secret'
-   
+    default: 'No name provided'
   qscore:
     description: 'provide the QScored api'
-    
+    default: 'No name provided'
 
 runs:
   using: "composite"
