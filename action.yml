@@ -6,11 +6,9 @@ branding:
   color: 'white'
 inputs:
   PAT:
-  required: true
     description: "The GITHUB_TOKEN repo secret"
     default: ${{ secrets.PAT }}
   qscore:
-  required: true
     description: "provide the QScored api"
     default: ${{ secrets.QSCORED_API_KEY }}
 
