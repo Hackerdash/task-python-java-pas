@@ -5,17 +5,23 @@ branding:
   icon: 'thumbs-up'
   color: 'white'
 inputs:
-  repo-token:
+  PAT:
+  required: true
     description: "The GITHUB_TOKEN repo secret"
+    default: ${{ secrets.PAT }}
+  qscore:
+  required: true
+    description: "provide the QScored api"
+    default: ${{ secrets.QSCORED_API_KEY }}
 
 runs:
   using: "composite"
   steps:
       - name: Download DesigniteJava
         run: wget "https://www.designite-tools.com/static/download/DJE/DesigniteJava.jar"
+
       - name: Analyze project with DesigniteJava
         run: |
-          java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat ${{ secrets.PAT }} 
+          java -jar DesigniteJava.jar -ci -repo $GITHUB_REPOSITORY -pat {{ inputs.PAT }} 
           ls
-          curl -X PUT -H "Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "repository-link:https://github.com/" + GITHUB_REPOSITORY -H "username: " -H "Content-Type: mulitpart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=off&version=$GITHUB_RUN_NUMBER&project_name=" -F "file=@Designite_output/DesigniteAnalysis.xml"
-  
+          curl -X PUT -H "Authorization: Token {{ inputs.qscore }}" -H "repository-link:https://github.com/" + ${{ github.repository }}-H "username:" -H "Content-Type: mulitpart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=on&version=$GITHUB_RUN_NUMBER&project_name=hello" -F "file=@Designite_output/DesigniteAnalysis.xml"
