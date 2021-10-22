@@ -32,6 +32,5 @@ jobs:
       run: |
         .\DesigniteConsole\DesigniteConsole.exe -ci -repo ${{ github.repository }} -pat ${{ secrets.PAT }}
         # cat Designite_output/DesigniteAnalysis.xml
-        curl -X PUT -H "Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "repository-link:https://github.com/" + ${{ github.repository }} -H "username: 'Your
-        email'" -H "Content-Type: mulitpart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=off&version=${{ github.run_number }}&project_name='Project
-        name'" -F "file=@Designite_output/DesigniteAnalysis.xml"
+        curl -X PUT -H "Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "repository-link:https://github.com/" + ${{ github.repository }} -H "username:naik984907@gmail.com 'Your
+        email'" -H "Content-Type: mulitpart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=off&version=${{ github.run_number }}&project_name= $ {{ github.event.repository.name }}" -F "file=@Designite_output/DesigniteAnalysis.xml"
