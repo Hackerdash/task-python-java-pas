@@ -5,7 +5,7 @@ public class ArmstrongExample
     {
         int n, r, sum = 0, temp;
         Console.Write("Enter the Number= ");
-        n = int.Parse(Console.ReadLine());
+        n = 9;
         temp = n;
         while (n > 0)
         {
