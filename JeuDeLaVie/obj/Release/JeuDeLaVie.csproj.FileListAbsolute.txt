@@ -1,0 +1,4 @@
+F:\JeuDeLaVie\JeuDeLaVie\bin\Release\JeuDeLaVie.dll
+F:\JeuDeLaVie\JeuDeLaVie\bin\Release\JeuDeLaVie.pdb
+F:\JeuDeLaVie\JeuDeLaVie\obj\Release\JeuDeLaVie.dll
+F:\JeuDeLaVie\JeuDeLaVie\obj\Release\JeuDeLaVie.pdb

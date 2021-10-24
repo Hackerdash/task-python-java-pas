@@ -1,0 +1,15 @@
+C:\Users\c\source\repos\JeuDeLaVie\JeuDeLaVie\bin\Debug\JeuDeLaVie.dll
+C:\Users\c\source\repos\JeuDeLaVie\JeuDeLaVie\bin\Debug\JeuDeLaVie.pdb
+C:\Users\c\source\repos\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.csprojAssemblyReference.cache
+C:\Users\c\source\repos\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.dll
+C:\Users\c\source\repos\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.pdb
+F:\JeuDeLaVie\JeuDeLaVie\bin\Debug\JeuDeLaVie.dll
+F:\JeuDeLaVie\JeuDeLaVie\bin\Debug\JeuDeLaVie.pdb
+F:\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.csprojAssemblyReference.cache
+F:\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.dll
+F:\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.pdb
+F:\2\JeuDeLaVie\JeuDeLaVie\bin\Debug\JeuDeLaVie.dll
+F:\2\JeuDeLaVie\JeuDeLaVie\bin\Debug\JeuDeLaVie.pdb
+F:\2\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.csprojAssemblyReference.cache
+F:\2\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.dll
+F:\2\JeuDeLaVie\JeuDeLaVie\obj\Debug\JeuDeLaVie.pdb
